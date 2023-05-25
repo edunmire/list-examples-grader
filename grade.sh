@@ -46,7 +46,7 @@ if [[ $err_code -eq 0 ]]
 then
     echo "Tests all passed!"
 else
-    echo "Something didn't work!"
+    echo "Some tests didn't pass. Student submission has errors!"
 fi
 
 # Draw a picture/take notes on the directory structure that's set up after
