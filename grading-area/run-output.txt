@@ -1,0 +1,36 @@
+JUnit version 4.13.2
+.E...E.E.
+Time: 1.354
+There were 3 failures:
+1) testMergeRightEnd(TestListExamples)
+org.junit.runners.model.TestTimedOutException: test timed out after 500 milliseconds
+	at java.base/java.util.Arrays.copyOf(Arrays.java:3512)
+	at java.base/java.util.Arrays.copyOf(Arrays.java:3481)
+	at java.base/java.util.ArrayList.grow(ArrayList.java:237)
+	at java.base/java.util.ArrayList.grow(ArrayList.java:244)
+	at java.base/java.util.ArrayList.add(ArrayList.java:454)
+	at java.base/java.util.ArrayList.add(ArrayList.java:467)
+	at ListExamples.merge(ListExamples.java:42)
+	at TestListExamples.testMergeRightEnd(TestListExamples.java:27)
+2) testFilter_MultVal(TestListExamples)
+java.lang.AssertionError: expected:<[hello, bonjour]> but was:<[bonjour, hello]>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at TestListExamples.testFilter_MultVal(TestListExamples.java:59)
+3) testMerge_AllOneThenOther(TestListExamples)
+org.junit.runners.model.TestTimedOutException: test timed out after 500 milliseconds
+	at java.base/java.lang.System.arraycopy(Native Method)
+	at java.base/java.util.Arrays.copyOf(Arrays.java:3514)
+	at java.base/java.util.Arrays.copyOf(Arrays.java:3481)
+	at java.base/java.util.ArrayList.grow(ArrayList.java:237)
+	at java.base/java.util.ArrayList.grow(ArrayList.java:244)
+	at java.base/java.util.ArrayList.add(ArrayList.java:454)
+	at java.base/java.util.ArrayList.add(ArrayList.java:467)
+	at ListExamples.merge(ListExamples.java:42)
+	at TestListExamples.testMerge_AllOneThenOther(TestListExamples.java:91)
+
+FAILURES!!!
+Tests run: 6,  Failures: 3
+
